@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Morgester Dental LLC - Top Rated Dentistry in St. Louis</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Newsreader:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#1a6d6e",
+                      "secondary-container": "#a2eded",
+                      "inverse-primary": "#adc7f7",
+                      "tertiary-fixed-dim": "#b7c9d5",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-container-high": "#e6e8ea",
+                      "error": "#ba1a1a",
+                      "tertiary": "#12232b",
+                      "on-primary-fixed-variant": "#2d476f",
+                      "on-primary-fixed": "#001b3c",
+                      "on-tertiary-container": "#90a1ac",
+                      "primary-fixed-dim": "#adc7f7",
+                      "surface-container-highest": "#e0e3e5",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-fixed": "#d6e3ff",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#384953",
+                      "secondary": "#13696a",
+                      "secondary-fixed": "#a5eff0",
+                      "outline": "#74777f",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#d8dadc",
+                      "on-secondary-fixed": "#002020",
+                      "inverse-surface": "#2d3133",
+                      "outline-variant": "#c4c6cf",
+                      "tertiary-fixed": "#d3e5f1",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#004f50",
+                      "surface-bright": "#f7f9fb",
+                      "on-surface": "#191c1e",
+                      "secondary-fixed-dim": "#89d3d4",
+                      "background": "#f7f9fb",
+                      "on-background": "#191c1e",
+                      "on-primary-container": "#86a0cd",
+                      "primary": "#002045",
+                      "surface-tint": "#455f88",
+                      "surface": "#f7f9fb",
+                      "primary-container": "#1a365d",
+                      "surface-variant": "#e0e3e5",
+                      "surface-container": "#eceef0",
+                      "on-tertiary-fixed": "#0c1e26",
+                      "on-error": "#ffffff",
+                      "on-surface-variant": "#43474e",
+                      "tertiary-container": "#273841"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Newsreader"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Newsreader"
+                      ],
+                      "headline-xl": [
+                              "Newsreader"
+                      ],
+                      "label-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Newsreader"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "2.25rem",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "1.125rem",
+                              {
+                                      "lineHeight": "1.7",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "1.5rem",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "3rem",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-md": [
+                              "0.875rem",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "4.5rem",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "1rem",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased pt-20">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-blue-50/10 shadow-sm shadow-blue-900/5">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-black text-blue-900 dark:text-blue-50">Morgester Dental</div>
+<div class="hidden md:flex gap-8">
+<a class="text-blue-900 dark:text-blue-400 border-b-2 border-teal-500 pb-1 font-serif font-bold text-lg transition-all duration-300 hover:opacity-80" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 font-serif font-bold text-lg transition-all duration-300 hover:opacity-80" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 font-serif font-bold text-lg transition-all duration-300 hover:opacity-80" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 font-serif font-bold text-lg transition-all duration-300 hover:opacity-80" href="#">Gallery</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 font-serif font-bold text-lg transition-all duration-300 hover:opacity-80" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-md text-label-md hover:-translate-y-0.5 transition-transform shadow-[0_4px_12px_rgba(26,54,93,0.15)] hidden md:block">Schedule Appointment</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface-container overflow-hidden pt-12 pb-24 md:pt-24 md:pb-32 px-gutter">
+<div class="absolute inset-0 z-0">
+<img alt="modern bright dental office interior with state of the art equipment and large windows" class="w-full h-full object-cover opacity-20" data-alt="modern bright dental office interior with state of the art equipment and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2PY4RCX53XA0STTRp2UHuJA8b6rsMKUFMdLb2pOuFMc0afpCeMgKjr2b00iX-0ymIvzABzQZn04SYmNrd-CQ7-j5alpvk17VN_2q2502JwntpW_iFWRzp7tcX4-S-Tp3ZLgnzRAf1RqDLExAcjsTk0WYFFXqAVmY2QRtxgPFOC6rAzsYhzNylX95_rhLGPKWZy0aZH7RexrpSAQ_2ulzV2hPifyUOaDMNgGK6r-xoVC89wocHQYw8jMIoLUOmueNvkdTCDd8P77M"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container via-surface-container/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md">
+<h1 class="font-display-lg text-display-lg text-primary">Top Rated Dentistry in St. Louis</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Dentist in Chesterfield, MO. Providing modern &amp; family-friendly care.</p>
+<div class="pt-stack-sm flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:-translate-y-1 transition-transform shadow-[0_8px_24px_rgba(26,54,93,0.2)]">Schedule Appointment</button>
+<button class="bg-transparent text-primary border-2 border-primary px-8 py-4 rounded-full font-label-md text-label-md hover:bg-primary/5 transition-colors">View Services</button>
+</div>
+</div>
+<div class="hidden lg:block relative">
+<img alt="friendly smiling female dentist in a bright modern clinic holding a tablet" class="rounded-[2rem] shadow-[0_20px_40px_rgba(26,54,93,0.1)] w-full object-cover h-[500px]" data-alt="friendly smiling female dentist in a bright modern clinic holding a tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC3HQ1FtRU09SbJKVfL0NWSDWEqYnOhMJOo6AV3VJgUgP5PtSr3FfB2zkFKfIyx6zOFxHT99hsesUKSvevQ9z6z55ziV1u3xDXjsgcukpWBRbmwo90zHtt026F7ic1d2RKfv70k815F67j7j4mYB5sZmfVvLIS2W5CtlcF4RJHe7H9dBbUYc6JjQg62Xr2MZ_IV_iv9SSUr86qnubsgIuEUD7ldrwy7i8RuYO-xnc-2vYS7rsq3H24gXT_QuzHwSFNDeqqQPoRlQs"/>
+<!-- Trust Badge Floating -->
+<div class="absolute -bottom-8 -left-8 bg-surface text-on-surface p-6 rounded-xl shadow-[0_12px_32px_rgba(26,54,93,0.1)] border border-surface-variant flex items-center gap-4">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">99 Patient Reviews</p>
+<p class="text-sm text-on-surface-variant">5.0 Average Rating</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-primary text-on-primary py-stack-md px-gutter">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-center items-center gap-8 text-center md:text-left">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+<span class="font-body-md text-body-md">510 Baxter Road, Suite #1, Chesterfield, MO 63017</span>
+</div>
+<div class="hidden md:block w-px h-6 bg-on-primary/20"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">language</span>
+<span class="font-body-md text-body-md">English Spoken</span>
+</div>
+<div class="hidden md:block w-px h-6 bg-on-primary/20"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">credit_card</span>
+<span class="font-body-md text-body-md">Credit/Debit Cards Accepted</span>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-section-gap px-gutter bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg max-w-2xl mx-auto">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Our Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Comprehensive dental care for the whole family, utilizing the latest technology.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Featured Service -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_24px_rgba(26,54,93,0.05)] flex flex-col justify-between border border-surface-variant hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">General Dentistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Routine checkups, cleanings, and preventive care to keep your smile healthy and bright for years to come.</p>
+</div>
+</div>
+<!-- Service Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_24px_rgba(26,54,93,0.05)] border border-surface-variant hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Cosmetic Dentistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Transform your smile with our expert cosmetic treatments.</p>
+</div>
+<!-- Service Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_24px_rgba(26,54,93,0.05)] border border-surface-variant hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">sentiment_satisfied</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Whitening &amp; Veneers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Achieve a radiant, flawless smile with professional whitening and custom veneers.</p>
+</div>
+<!-- Service Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_24px_rgba(26,54,93,0.05)] border border-surface-variant hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">timer</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">One Day Crowns</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Fast, efficient, and durable crowns placed in a single visit.</p>
+</div>
+<!-- Service Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_24px_rgba(26,54,93,0.05)] border border-surface-variant hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Endodontics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized care for root canals and saving infected teeth comfortably.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-gutter bg-surface-container-low">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="relative">
+<img alt="professional dentist examining a patient in a bright clean dental room" class="rounded-2xl shadow-[0_16px_32px_rgba(26,54,93,0.1)] w-full object-cover h-[600px]" data-alt="professional dentist examining a patient in a bright clean dental room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACI4OB4HOh3wGMFxpQzAAhS7Jlp9y4LPU1v2-y2aXdtSv_657QcUQ4XpxoDaGPEFHffh9E1BNYyqDjYaKVFrmw9FBMi3wU3xQpA7YZJGBrPZyAJxLTDtyr-7Anq2pZZaAsUy1QHK-HH_3h-BtdvreJJT0Igg4soMqc1lJ0B5I0KUBAPKON-MdGctj__iWztb0TQzxOE_POBwq8CuiFO49UFiqlxjNAvo7ZwIPg1WOl5JLGe616PCeFRUsV99a-KGHSCIksp7X782Y"/>
+</div>
+<div class="space-y-stack-md bg-surface p-8 md:p-12 rounded-2xl shadow-[0_8px_24px_rgba(26,54,93,0.05)] border border-surface-variant -ml-0 lg:-ml-16 relative z-10">
+<h2 class="font-headline-xl text-headline-xl text-primary">About Our Office</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">With over 20 years experience, Dr. Morgester and our dedicated team are committed to providing exceptional care in a comfortable setting.</p>
+<div class="pt-4 grid grid-cols-3 gap-4 border-t border-surface-variant">
+<div class="text-center">
+<p class="font-display-lg text-display-lg text-secondary">3</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Hygienists</p>
+</div>
+<div class="text-center">
+<p class="font-display-lg text-display-lg text-secondary">2</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Assistants</p>
+</div>
+<div class="text-center">
+<p class="font-display-lg text-display-lg text-secondary">1</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Office Staff</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-section-gap px-gutter bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Patient Reviews</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Don't just take our word for it.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_16px_rgba(26,54,93,0.05)] border border-surface-variant">
+<div class="flex text-amber-400 mb-4">
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">"Hands down best dentist... loyal, caring, thoughtful..."</p>
+<p class="font-label-md text-label-md text-primary">- SimplyJules</p>
+</div>
+<!-- Review Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_16px_rgba(26,54,93,0.05)] border border-surface-variant">
+<div class="flex text-amber-400 mb-4">
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">"Have been going to Dr. Morgester for well over 20 years... always had great service."</p>
+<p class="font-label-md text-label-md text-primary">- Beverly C.</p>
+</div>
+<!-- Review Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_16px_rgba(26,54,93,0.05)] border border-surface-variant">
+<div class="flex text-amber-400 mb-4">
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">"Our family have enjoyed Dr. Morgester... knowledgeable, careful and friendly."</p>
+<p class="font-label-md text-label-md text-primary">- Anonymous</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full pt-16 pb-8 border-t border-white/10 bg-blue-900 dark:bg-slate-950 text-white dark:text-slate-200 font-sans text-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto mb-12">
+<div>
+<div class="text-xl font-serif font-bold text-white mb-4">Morgester Dental</div>
+<p class="text-blue-100/70 mb-4">Top Rated Dentistry in St. Louis providing modern &amp; family-friendly care.</p>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-blue-100/70 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-blue-100/70 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Terms of Service</a></li>
+<li><a class="text-blue-100/70 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Patient Forms</a></li>
+<li><a class="text-blue-100/70 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Accessibility</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4">Contact</h4>
+<ul class="space-y-2 text-blue-100/70">
+<li>510 Baxter Road, Suite #1</li>
+<li>Chesterfield, MO 63017</li>
+<li>(555) 123-4567</li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4">Hours</h4>
+<ul class="space-y-2 text-blue-100/70">
+<li>Mon - Thu: 8am - 5pm</li>
+<li>Fri: 8am - 12pm</li>
+<li>Sat - Sun: Closed</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 text-center text-blue-100/50">
+<p>© 2024 Morgester Dental. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
