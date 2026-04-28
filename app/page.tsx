@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -136,12 +139,28 @@ const trustPoints: Array<{ icon: IconName; label: string }> = [
 ];
 
 const primaryButton =
-  "inline-flex items-center justify-center rounded-full bg-brand-navy px-6 py-3 text-sm font-semibold tracking-[0.18em] text-white uppercase transition hover:-translate-y-0.5 hover:bg-brand-navy-deep";
+  "inline-flex items-center justify-center rounded-full bg-brand-navy px-6 py-3 text-sm font-semibold tracking-[0.18em] !text-white uppercase transition hover:-translate-y-0.5 hover:bg-brand-navy-deep hover:!text-white";
 
 const secondaryButton =
   "inline-flex items-center justify-center rounded-full border border-brand-navy px-6 py-3 text-sm font-semibold tracking-[0.18em] text-brand-navy uppercase transition hover:bg-brand-navy/5";
 
 export default function Home() {
+  const [activeNav, setActiveNav] = useState("#home");
+
+  useEffect(() => {
+    const updateActiveNav = () => {
+      const hash = window.location.hash;
+      setActiveNav(hash || "#home");
+    };
+
+    updateActiveNav();
+    window.addEventListener("hashchange", updateActiveNav);
+
+    return () => {
+      window.removeEventListener("hashchange", updateActiveNav);
+    };
+  }, []);
+
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-brand-line/80 bg-white/85 backdrop-blur-xl">
@@ -154,15 +173,16 @@ export default function Home() {
           </Link>
 
           <div className="hidden items-center gap-6 lg:flex xl:gap-8">
-            {navigation.map((item, index) => (
+            {navigation.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
                 className={`border-b-2 pb-1 font-serif text-base font-semibold transition xl:text-lg ${
-                  index === 0
+                  activeNav === item.href
                     ? "border-brand-teal text-brand-navy"
                     : "border-transparent text-brand-muted hover:text-brand-navy"
                 }`}
+                onClick={() => setActiveNav(item.href)}
               >
                 {item.label}
               </Link>
